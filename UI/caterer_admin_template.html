@@ -3,18 +3,38 @@
 <head>
 	<meta name = "viewport" content = "width = device-width, initial-scale = 1.0"> 
         <title>Admin Dashboard </title>
-        <link rel="stylesheet" href="css/styles.css"/>
+        <link rel="stylesheet" href="css/styles.css"/> 
+        <script src="js/index.js"></script>     
     </head>
     <body>
         <!-- Navigation Menu -->
         <div id="nav">
             <ul>
-                <li><a href="customer_signin.html">Home</a></li>
+                <li style="float:left;pointer-events:none;"><a><b>Book-A-Meal</b></a></li>
+                <li><a style="color:#3bc1ed;pointer-events:none;"><small>Welcome: Admin</small></a></li>
                 <li><a>Menu</a></li>
-                <li style="float:right;"><a class="active"  href="customer_signup.html">Sign Up</a></li>
+                <li><a class="active" href="">Home</a></li>
             </ul>
-    </div>
+        </div>
         <div class="wrapper">
+            <div class="mainContent">
+                <div id="meal_options">
+                    <div class="header">
+                        <h2 style="margin:5px">Meal Options</h2>   
+                        <input type="text" placeholder="Add a meal option">
+                        <span class="addBtn">Add</span>                         
+                    </div>
+                        
+                    <ul id="menuList">
+                    <li>Rice and Chicken<span class="close">×</span></li>
+                    <li>Rice and Fish<span class="close">×</span></li>
+                    <li>Posho and Beans<span class="close">×</span></li>
+                    <li>Chips Masala<span class="close">×</span></li>
+                    <li>Potatoes and Meat<span class="close">×</span></li>
+                    <li>Fries and Beef<span class="close">×</span></li>
+                    </ul>                    
+                </div>
+            </div>
         </div>
     </body>
 </html>
