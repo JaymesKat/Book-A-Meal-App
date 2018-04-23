@@ -1,0 +1,50 @@
+<!DOCTYPE HTML5>
+<html lang='en'>
+<head>
+	<meta name = "viewport" content = "width = device-width, initial-scale = 1.0"> 
+        <title>Sign In As Customer</title>
+        <link rel="stylesheet" href="css/styles.css"/>
+    </head>
+    <body>
+         <!-- Navigation Menu -->
+         <div id="nav">
+            <ul>
+                <li><a class="active"   href="customer_signin.html">Home</a></li>
+                <li><a>Menu</a></li>
+                <li style="float:right;"><a href="customer_signup.html">Sign Up</a></li>
+            </ul>
+        </div>
+        <div class="wrapper">
+             <div class="content" id="login">
+                    <div class="formBox"> 
+                        <form>
+                            <h1>Sign in As Customer</h1> 
+                            <p><small>Fill your credentials to proceed</small></p>
+                            <hr>
+                            <div class="container">
+                                <p> 
+                                    <label for="username"> Email </label>
+                                    <input id="username" name="username" required="required" type="text" placeholder="your email..."/>
+                                </p>
+                                <p> 
+                                    <label for="password"> Password </label>
+                                    <input id="password" name="password" required="required" type="password" placeholder="..." /> 
+                                </p>
+                                <p> 
+                                    <input type="checkbox" name="keeploggedin" id="keeploggedin" value="keeploggedin" /> 
+                                    <label for="keeploggedin">Keep me logged in</label>
+                                </p>
+                                <div class="clearfix"></div>
+                                    <button type="submit" class="signinbtn">Sign In</button>
+                                </div>
+                                <p class="change_link">
+                                    Not a member yet ?
+                                    <a href="customer_signup.html">Sign up</a>
+                                </p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+         </div>
+    </body>
+</html>
