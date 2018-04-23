@@ -11,4 +11,3 @@ function viewSigninForm(evt, userType) {
     document.getElementById(userType).style.display = "block";
     evt.currentTarget.className += " active";
 }
-document.getElementById("defaultOpen").click();
