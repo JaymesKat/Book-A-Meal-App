@@ -22,7 +22,7 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #fff;
+    background-color: #f1f1f1;
 }
 
 #nav > ul > li {
@@ -37,38 +37,75 @@ body {
     text-decoration: none;
     float: left;
     font-size: 17px;
+    cursor: pointer;
 }
 
 #nav > ul > li a:hover:not(.active) {
-    background-color: #f3f3f3;
+    background-color: #ccc;
 }
 
 #nav > ul > li a.active {
-    color: #165f78;
-    background-color: #f3f3f3;
+    background-color: #ccc;
 }
 #nav .icon {
     display: none;
   }
+
 .content {
     width: 40%;
     height: auto;
     position: relative;
 }
 
-.formbox{
+.formBox{
     background: white;
     width: 100%;
-    padding: 15px 25px;
+    padding: 15px 0px;
+    padding-top: 0px;
     border-radius: 5px;
     box-shadow: 0 3px 10px #1a1a1a;
 }
 
+.formContent{
+    display: none;
+    padding: 10px 25px;
+}
 
 hr {
     border: 1px solid #f1f1f1;
     margin-bottom: 25px;
 }
+
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: inherit;    
+    color: #666;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    width: 50%;
+    font-size: 17px;
+    margin: 0px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #ccc;
+}
+
 
 /* Set a style for all buttons */
 button {
