@@ -180,6 +180,8 @@ input[type=text]:focus, input[type=password]:focus {
     padding: 30px 40px;
     color: white;
     text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
   }
 
   .mainContent > div > .header:after {
@@ -189,7 +191,7 @@ input[type=text]:focus, input[type=password]:focus {
   }
 
   
-  .mainContent > div input[type="text"] {
+  .mainContent > div > .header input[type="text"] {
     border: none;
     width: 65%;
     margin: 0px;
