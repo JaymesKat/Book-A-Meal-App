@@ -9,12 +9,13 @@ body {
   }
 
 .wrapper {
-    width: 100%;
+    /* width: 100%; */
     min-height: 100%;
     position: relative;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    padding:40px;
 }
 
 #nav ul{
@@ -70,88 +71,6 @@ body {
     display: none;
     padding: 10px 25px;
 }
-
-.mainContent{
-    background: white;
-    width: calc(100% - 20px);
-    padding: 15px 0px;
-    border-radius: 10px;
-    display:flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-#meal_options > .header {
-    background-color:  #003040;
-    padding: 30px 40px;
-    color: white;
-    text-align: center;
-  }
-
-  #meal_options > .header:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-
-  
-  #meal_options input {
-    border: none;
-    width: 65%;
-    margin: 0px;
-    padding: 10px;
-    float: left;
-    font-size: 16px;
-  }
-
-  #meal_options .addBtn {
-    padding: 10px;
-    width: 25%;
-    background: #d9d9d9;
-    color: #555;
-    float: left;
-    text-align: center;
-    font-size: 16px;
-    cursor: pointer;
-  }
-
-  #meal_options .addBtn:hover {
-    background-color: #bbb;
-  }
-
-#meal_options > ul {
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* Style the list items */
-  #meal_options > ul li {
-    cursor: pointer;
-    position: relative;
-    padding: 12px 8px 12px 40px;
-    list-style-type: none;
-    background: #eee;
-    font-size: 18px;
-    transition: 0.2s;
-  }
-
-  #meal_options > ul li .close {
-    position: absolute;
-    right: 0;
-    top: 0;
-    padding: 12px 16px 12px 16px;
-  }
-  
-  #meal_options > ul li .close:hover {
-    background-color: #003040;
-    color: white;
-  }
-
-  #meal_options > ul li:nth-child(odd) {
-    background: #f9f9f9;
-  }
-
 
 hr {
     border: 1px solid #f1f1f1;
@@ -240,6 +159,91 @@ input[type=text]:focus, input[type=password]:focus {
     background-color: #ddd;
     outline: none;
 }
+
+.mainContent{
+    background: white;
+    width: calc(100% - 20px);
+    padding: 15px 0px;
+    border-radius: 10px;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.mainContent > div {
+    margin: 5px 10px;
+}
+
+.mainContent > div > .header {
+    background-color:  #003040;
+    padding: 30px 40px;
+    color: white;
+    text-align: center;
+  }
+
+  .mainContent > div > .header:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  
+  .mainContent > div input[type="text"] {
+    border: none;
+    width: 65%;
+    margin: 0px;
+    padding: 10px;
+    float: left;
+    font-size: 16px;
+  }
+
+  .mainContent > div .addBtn {
+    padding: 10px;
+    width: 25%;
+    background: #d9d9d9;
+    color: #555;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .mainContent > div .addBtn:hover {
+    background-color: #bbb;
+  }
+
+  .mainContent > div > ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Style the list items */
+  .mainContent > div > ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    list-style-type: none;
+    background: #eee;
+    font-size: 18px;
+    transition: 0.2s;
+  }
+
+  .mainContent > div > ul li .close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+  }
+  
+  .mainContent > div > ul li .close:hover {
+    background-color: #003040;
+    color: white;
+  }
+
+  .mainContent > div > ul li:nth-child(odd) {
+    background: #f9f9f9;
+  }
 
 /* Change styles for cancel button and signup button on extra small screens */
 @media screen and (max-width: 300px) {
