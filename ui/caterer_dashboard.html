@@ -4,6 +4,7 @@
 	<meta name = "viewport" content = "width = device-width, initial-scale = 1.0"> 
         <title>Admin Dashboard </title>
         <link rel="stylesheet" href="css/styles.css"/> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="js/index.js"></script>     
     </head>
     <body>
@@ -11,7 +12,12 @@
         <div id="nav">
             <ul>
                 <li style="float:left;"><a href="index.html"><b>Book-A-Meal</b></a></li>
-                <li><a style="color:#3bc1ed;pointer-events:none;"><small>Welcome: Admin</small></a></li>
+                <li class="dropdown">
+                        <button class="dropmenubtn">
+                           Admin Settings</small> 
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                </li>
                 <li><a href="caterer_order_history.html">Order History</a></li>
                 <li><a class="active" href="">Home</a></li>
             </ul>
