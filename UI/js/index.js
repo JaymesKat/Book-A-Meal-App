@@ -1,4 +1,4 @@
-function viewSigninForm(evt, userType) {
+function viewForm(evt, userType) {
     var i, formHolder, tablinks;
     formHolder = document.getElementsByClassName("formContent");
     for (i = 0; i < formHolder.length; i++) {

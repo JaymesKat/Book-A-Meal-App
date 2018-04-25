@@ -146,7 +146,7 @@ button:hover {
     margin: 0px;
 }
 
-input[type=text], input[type=password] {
+input[type=text],input[type=email], input[type=password] {
     width: 100%;
     padding: 15px;
     margin: 5px 0 22px 0;
@@ -155,7 +155,7 @@ input[type=text], input[type=password] {
     background: #f1f1f1;
 }
 
-input[type=text]:focus, input[type=password]:focus {
+input[type=text]:focus, input[type=email], input[type=password]:focus {
     background-color: #ddd;
     outline: none;
 }
@@ -168,11 +168,15 @@ input[type=text]:focus, input[type=password]:focus {
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: center;
 }
 
 .mainContent > div {
     margin: 5px 10px;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
 }
 
 .mainContent > div > .header {
@@ -184,7 +188,7 @@ input[type=text]:focus, input[type=password]:focus {
     border-top-right-radius: 10px;
   }
 
-  .mainContent > div > .header:after {
+   .mainContent > div > .header:after {
     content: "";
     display: table;
     clear: both;
@@ -211,6 +215,10 @@ input[type=text]:focus, input[type=password]:focus {
     cursor: pointer;
   }
 
+  .mainContent > div > .addBtn{
+    color: #fff;
+}
+
   .mainContent > div .addBtn:hover {
     background-color: #bbb;
   }
@@ -222,13 +230,17 @@ input[type=text]:focus, input[type=password]:focus {
   
   /* Style the list items */
   .mainContent > div > ul li {
+    text-align: center;
     cursor: pointer;
     position: relative;
-    padding: 12px 8px 12px 40px;
+    padding: 12px 8px 12px 10px;
     list-style-type: none;
     background: #eee;
     font-size: 18px;
-    transition: 0.2s;
+  }
+
+  .mainContent > div > ul li input[type="checkbox"]{
+      float:left;
   }
 
   .mainContent > div > ul li .close {
